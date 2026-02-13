@@ -8,7 +8,11 @@ body.page {
   font-family: Arial, sans-serif;
 
   /* PALIEKAM tavo foną (jei turi paveikslą ar gradientą, čia palik) */
-     background: url('./images/bckg.webp') no-repeat center center fixed;
+     background: url('./images/bckg.webp');
+     background-size: cover;         /* Ištampo foto, kad užpildytų visą plotą */
+  background-position: center;    /* Centruoja vaizdą */
+  background-repeat: no-repeat;   /* Neleidžia nuotraukai kartotis (tiling) */
+  background-attachment: fixed;   /* Fonas lieka vietoje, kol turinys skrolinasi (nebūtina, bet atrodo pro) */
      
 
   /* 3 zonos */
