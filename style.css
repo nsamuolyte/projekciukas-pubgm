@@ -101,7 +101,7 @@ body.page {
 .social-text p {
   margin: 6px 0;
   white-space: nowrap;
-  font-size: clamp(12px, 1.6vw, 20px);
+  font-size: clamp(12px, 1.6vw, 14px);
 }
 
 /* linkų stilius (palik kaip nori) */
