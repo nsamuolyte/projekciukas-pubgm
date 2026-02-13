@@ -3,24 +3,35 @@ html, body {
   height: 100%;
 }
 
+/* 1. Nustatome foną pačiam pagrindiniam HTML elementui */
+html {
+    height: 100%; /* Būtina */
+    margin: 0;    /* Panaikinam bet kokias standartines naršyklės paraštes */
+    padding: 0;
+
+    /* FONO NUSTATYMAI PERKELTI ČIA */
+    background: url('./images/bckg.webp');
+    background-size: cover;        /* Ištampo iki kraštų */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  /* Fonas stovi vietoje skrolinant */
+}
+
+/* 2. Išvalome body.page, nes fonas jau yra ant html */
 body.page {
-  margin: 0;
+  margin: 0; /* Dėl visa ko paliekam ir čia */
+  padding: 0;
   font-family: Arial, sans-serif;
+  
+  /* background savybes iš čia IŠTRINAM, kad nesidubliuotų */
 
-  /* PALIEKAM tavo foną (jei turi paveikslą ar gradientą, čia palik) */
-     background: url('./images/bckg.webp');
-     background-size: cover;         /* Ištampo foto, kad užpildytų visą plotą */
-  background-position: center;    /* Centruoja vaizdą */
-  background-repeat: no-repeat;   /* Neleidžia nuotraukai kartotis (tiling) */
-  background-attachment: fixed;   /* Fonas lieka vietoje, kol turinys skrolinasi (nebūtina, bet atrodo pro) */
-     
-
-  /* 3 zonos */
+  /* 3 zonos layout lieka */
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
 
+/* ... toliau tavo likęs kodas (.page-header ir t.t.) ... */
 /* ===== Header ===== */
 .page-header {
   padding: 18px 16px 10px;
